@@ -1,0 +1,12 @@
+---
+- name: Ansible Hello word ard
+  hosts: prueba #apagado_venezuela #all_server_linux_prd_ve
+  become: true
+  tasks:
+    - name: Ansible Hello word ard
+      shell: echo "Hello Word Ansible is running in client!";date;hostname
+      register: out
+
+    - name: print stdout_lines
+      debug:
+        msg: "{{ out.stdout_lines }}"
