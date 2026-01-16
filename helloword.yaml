@@ -4,7 +4,9 @@
   become: true
   tasks:
     - name: Ansible Hello word ard
-      shell: echo "Hello Word Ansible is running in client!";date;hostname
+      shell: echo "Hello Word Ansible is running in client!"
+      date
+      hostname
       register: out
 
     - name: print stdout_lines
