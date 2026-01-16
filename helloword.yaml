@@ -1,5 +1,5 @@
 ---
-- name: Ansible Hello word ard
+- name: Ansible Hello word
   hosts: prueba #apagado_venezuela #all_server_linux_prd_ve
   become: true
   tasks:
